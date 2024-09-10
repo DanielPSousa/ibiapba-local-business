@@ -1,0 +1,81 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E2E3D8;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background-color: #cfceca;
+    border-radius: 20px;
+    padding: 30px;
+    width: 800px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+/* Estilo para o conteúdo principal */
+.content {
+    color: #213910;
+    font-size: 1.1rem;
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+.content h2 {
+    margin-top: 20px;
+    color: #213910;
+    font-size: 1.2rem;
+}
+
+/* Estilo para a lista */
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.content ul li {
+    margin: 10px 0;
+}
+
+.content ul li strong {
+    color: #000;
+}
+
+/* Estilo para o botão */
+.btn-voltar {
+    background-color: #B8A31A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #8BB44E;
+}

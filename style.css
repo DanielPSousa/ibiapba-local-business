@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color: #e2e3d8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem;
+    color: #213910;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Estiliza os inputs */
+section input {
+    width: 100%;
+    max-width: 600px;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estiliza os botões */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #156114;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Estiliza a caixa de resultados */
+.resultados-pesquisa {
+    width: 100%;
+    max-width: 900px;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    display: flex; /* Flexbox para alinhar imagem e texto lado a lado */
+    align-items: flex-start;
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+/* Estiliza as imagens dos resultados */
+.resultado-imagem {
+    width: 100px; /* Define largura fixa para a imagem */
+    height: 100px; /* Define altura fixa para a imagem */
+    margin-top: 35px;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    object-fit: cover; /* Faz a imagem se ajustar sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+/* Estiliza o texto dos resultados ao lado da imagem */
+.resultado-texto {
+    flex: 1; /* O texto ocupará o restante do espaço */
+}
+
+.resultado-texto h2 {
+    font-size: 1.5rem;
+    color: #222831;
+}
+
+.resultado-texto a {
+    text-decoration: none;
+    color: #30475E;
+}
+
+.resultado-texto a:hover {
+    text-decoration: underline;
+}
+
+.descricao-meta {
+    color: #45474B;
+    margin: 0.5rem 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #F5F7F8;
+    color: #45474B;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Menu Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #b8a31a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8bb44e;
+}
+
+/* Estilo para a logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo {
+    max-width: 200px; /* Largura máxima da logo */
+    height: auto;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    section input {
+        width: 90%;
+    }
+
+    .resultados-pesquisa {
+        width: 100%;
+    }
+
+    .item-resultado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resultado-imagem {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    section input {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}

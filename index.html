@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guia Ibiapaba</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo Centralizada -->
+        <div class="logo-container">
+            <img src="_img/logo.png" alt="Logo do Guia Ibiapaba" class="logo">
+        </div>
+
+        <!-- Menu Navegação -->
+        <nav>
+            <ul>
+                <li><a href="anuncie.html">Anuncie</a></li>
+                <li><a href="quem_somos.html">Quem somos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <h2>Tudo o que você precisa, na palma da sua mão</h2>
+    </header>
+
+    <main>
+        <section>
+            <input type="text" placeholder="Digite sua busca aqui" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 - Guia Ibiapaba. Todos os direitos reservados</p>
+        <p>Anuncie seu comércio: anuncio@guibiapaba.com.br</p>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

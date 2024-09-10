@@ -1,0 +1,81 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E2E3D8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background-color: #E2E3D8;
+    border-radius: 20px;
+    padding: 40px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #F0F0F0;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #B8A31A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8BB44E;
+}
+
+/* Estilo para a mensagem de sucesso */
+.success-message {
+    display: none;
+    color: green;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}

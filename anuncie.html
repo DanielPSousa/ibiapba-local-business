@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncie</title>
+    <link rel="stylesheet" href="styler_anuncie.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="_img/logo.png" alt="Guia Ibiapaba Logo" class="logo">
+        </div>
+
+        <form id="contactForm">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Enviar</button>
+
+            <p id="successMessage" class="success-message">Obrigado pelo seu interesse. <br> Em breve iremos retornar o seu contato!</p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o comportamento padrão do formulário
+
+            // Exibe a mensagem de sucesso
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
